@@ -1,0 +1,39 @@
+.container{
+    align-items: center;
+    background:white;
+    text-align: center;
+    width: 80%;
+    border-radius:2vh;
+    margin-left:10%;
+    padding-top:0.5vh;
+}
+p{
+    font-weight: bold;
+    font-size:18px;
+}
+ion-content{
+    --background:#ffc409;
+    display:flex;
+    justify-content: center;
+    align-content:center;
+}
+input{
+    border:0px solid gray;
+    border-radius:25px;
+    background-color:rgb(191, 191, 191);
+    text-align: center;
+    padding:0.5vh;
+}
+.password{
+    margin-top:1vh;
+}
+button{
+    margin-top:1.5vh;
+    margin-bottom:2vh;
+    width:60%;
+    font-weight: bold;
+    color:white;
+    background-color:rgb(255,74,74);
+    border-radius:25px;
+    height:3vh;
+}

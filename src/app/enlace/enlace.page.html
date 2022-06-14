@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="container">
+    <div class="image">
+      <!-- <img src="../../assets/img/mapa.png" alt="" class="logomap"> -->
+    </div>
+
+    <form action="" [formGroup]="myForm"  (ngSubmit)="onSubmit()" method="post" class="formulario">
+
+      <div class="row">
+        <div class="col">
+          <input formControlName="enlace" type="text" class="enlace" placeholder="Enlace">
+        </div>
+        <div class="col">
+          <button type="submit" class="submit">Consultar Grifos</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+</ion-content>

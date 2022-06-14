@@ -1,0 +1,7 @@
+{
+  "name": "WaterApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
