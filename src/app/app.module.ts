@@ -6,7 +6,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { AndroidPermissions } from '@awesome-cordova-plugins/android-permissions/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -16,7 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },AndroidPermissions],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
