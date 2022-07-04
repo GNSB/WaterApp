@@ -111,6 +111,7 @@ export class MapaPage implements OnInit {
           lng: longo,
         },
         zoom: 18,
+
       },
     });
     this.getGrifo();
@@ -126,6 +127,7 @@ export class MapaPage implements OnInit {
       },
       title: 'Emergencia',
       draggable: false,
+      iconUrl: `${location.href.includes('android') ? 'file:///android_asset/www/' : 'www/'}${'fire-hydrant.png'}`
     });
   }
 
@@ -159,7 +161,7 @@ export class MapaPage implements OnInit {
       },
       title: nombre,
       snippet: direccion,
-      draggable: false,
+      draggable: false
     });
   }
 }

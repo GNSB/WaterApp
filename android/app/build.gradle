@@ -1,9 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-
-  namespace 'io.ionic.starter'
-  compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "io.ionic.starter"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -39,8 +37,6 @@ dependencies {
     androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
     implementation project(':capacitor-cordova-android-plugins')
-  implementation 'com.google.maps.android:android-maps-utils:2.3.0'
-
 }
 
 apply from: 'capacitor.build.gradle'
